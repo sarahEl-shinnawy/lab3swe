@@ -1,0 +1,13 @@
+name: My first from scratch action 
+on: [push]
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest 
+    steps: 
+      -name: print welcome message
+      run: echo "hello github actions:)"
+
+      -name: print current date
+      run: echo "the date is $(date) "
+      
+    
